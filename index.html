@@ -1,69 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Bin Saeed's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 <body>
     <header>
-        <div class="profile-pic">
-            <img src="https://via.placeholder.com/150" alt="Profile Picture">
+        <div class="header-left">
+            <img src="https://via.placeholder.com/40" alt="LinkedIn Logo" class="logo">
         </div>
-        <div class="header-content">
-            <h1>Ali Bin Saeed</h1>
-            <p>Lahore, Pakistan | +923176327721 | <a href="mailto:iamalibinsaeed@gmail.com">iamalibinsaeed@gmail.com</a></p>
-            <a href="https://www.linkedin.com/in/iamalibinsaeed/">LinkedIn</a>
+        <div class="header-center">
+            <input type="text" placeholder="Search" class="search-bar">
+        </div>
+        <div class="header-right">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">My Network</a>
+                <a href="#">Jobs</a>
+                <a href="#">Messaging</a>
+                <a href="#">Notifications</a>
+                <a href="#">Me</a>
+            </nav>
         </div>
     </header>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p>I am a passionate developer with experience in PHP development, primarily solving client problems for SuiteCRM. Currently, I am eager to transition my career towards MERN stack development and am seeking opportunities as a MERN Stack Developer intern.</p>
-    </section>
+    <div class="container">
+        <aside class="left-sidebar">
+            <div class="profile-section">
+                <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-pic">
+                <h2>Ali Bin Saeed</h2>
+                <p>Full Stack Developer | WordPress | PHP | Laravel</p>
+                <p>Lahore District, Punjab</p>
+            </div>
+            <div class="additional-info">
+                <button>Experience</button>
+                <button>Saved Items</button>
+                <!-- Add more sidebar elements here -->
+            </div>
+        </aside>
 
-    <section class="education">
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelor's Degree in Computer Science - [University Name] - [Year of Graduation]</li>
-        </ul>
-    </section>
+        <main class="feed">
+            <div class="post">
+                <h3>Startup Pakistan</h3>
+                <p>Santex, in partnership with Davaam, has installed sanitary napkin vending machines...</p>
+                <img src="https://via.placeholder.com/400x200" alt="Post Image">
+            </div>
+            <!-- Add more posts here -->
+        </main>
 
-    <section class="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>PHP Developer</strong> at Smart Techlodge<br/>[Year - Year]</li>
-            <p>Focused on solving client problems for SuiteCRM by developing and maintaining web applications.</p>
-        </ul>
-    </section>
-
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>PHP Development</li>
-            <li>Laravel</li>
-            <li>SuiteCRM</li>
-            <li>JavaScript</li>
-            <li>SQL & MySQL</li>
-            <li>Version Control (Git)</li>
-        </ul>
-    </section>
-
-    <section class="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project Name</strong><br/>Brief description of the project.</li>
-        </ul>
-    </section>
-
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>If you would like to get in touch, please email me at <a href="mailto:iamalibinsaeed@gmail.com">iamalibinsaeed@gmail.com</a>.</p>
-    </section>
+        <aside class="right-sidebar">
+            <div class="add-to-feed">
+                <h4>Add to your feed</h4>
+                <ul>
+                    <li><button>+ Follow</button> Huda Tariq</li>
+                    <li><button>+ Follow</button> TalentQuip</li>
+                    <!-- Add more suggestions here -->
+                </ul>
+            </div>
+        </aside>
+    </div>
 
     <footer>
         <p>&copy; 2024 Ali Bin Saeed. All rights reserved.</p>
     </footer>
 </body>
-</html>

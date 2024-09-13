@@ -1,78 +1,88 @@
+/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #283e4a;
+    padding: 10px 20px;
+    color: white;
 }
 
-.profile-pic img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
+.logo {
+    width: 40px;
+    height: 40px;
 }
 
-.header-content h1 {
-    margin: 10px 0;
-    font-size: 24px;
+.search-bar {
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
 }
 
-.header-content p, .header-content a {
-    margin: 5px 0;
-    color: #ccc;
-}
-
-.header-content a {
-    color: #00aced;
+header nav a {
+    color: white;
+    margin: 0 10px;
     text-decoration: none;
 }
 
-header a:hover {
+header nav a:hover {
     text-decoration: underline;
 }
 
-section {
-    margin: 20px 0;
-    padding: 20px;
+/* Layout for Main Content */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.left-sidebar, .right-sidebar {
+    width: 20%;
     background-color: #fff;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-h2 {
-    margin-top: 0;
-    color: #333;
-    font-size: 22px;
-    border-bottom: 2px solid #00aced;
-    padding-bottom: 5px;
+.feed {
+    width: 60%;
+    margin: 0 20px;
 }
 
-ul {
+.post {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.add-to-feed ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul li {
+.add-to-feed ul li {
     margin-bottom: 10px;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
+    padding: 10px;
+    background-color: #283e4a;
+    color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
