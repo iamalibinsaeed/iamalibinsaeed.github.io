@@ -5,22 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ali Bin Saeed — Software Engineer in Test</title>
 <meta name="description" content="Ali Bin Saeed — Software Engineer in Test, QA Automation, CRM Specialist. 4+ years experience. Open to worldwide remote roles.">
-<meta property="og:title" content="Ali Bin Saeed — Software Engineer in Test">
-<meta property="og:description" content="4+ years in QA, automation, CRM & full-stack. Open to worldwide remote.">
-<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
-<canvas id="bg"></canvas>
 
-<nav>
-  <div class="nav-logo">ABS</div>
-  <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+<nav id="nav">
+  <a href="#hero" class="nav-brand">Ali<span class="brand-dot">.</span></a>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -30,355 +26,175 @@
   </ul>
 </nav>
 
+<!-- HERO -->
 <section id="hero">
-  <div class="hero-inner">
-    <p class="hero-tag">Software Engineer in Test · AI &amp; Automation · CRM Specialist</p>
-    <h1>
-      <span class="name-line">Ali Bin Saeed</span>
-      <span class="role-line">Building Quality<br>at Scale</span>
-    </h1>
-    <p class="hero-sub">4+ years engineering software, validating systems, and automating what shouldn't need humans. Currently at Smart Techlodge — open to worldwide remote.</p>
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-num">4+</div>
-        <div class="stat-label">Years Experience</div>
+  <canvas id="particles"></canvas>
+  <div class="hero-wrap">
+
+    <div class="hero-left">
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        <span>Available for hire &middot; Worldwide Remote</span>
       </div>
-      <div class="stat">
-        <div class="stat-num">9</div>
-        <div class="stat-label">Roles &amp; Projects</div>
+      <div class="terminal-line">
+        <span class="terminal-prompt">~/ali.dev$&nbsp;</span>
+        <span id="terminal-text"></span><span class="terminal-cursor">|</span>
       </div>
-      <div class="stat">
-        <div class="stat-num">5</div>
-        <div class="stat-label">Certifications</div>
+      <h1 class="hero-h1">
+        Software<br>
+        <span class="grad-text">Engineer</span><br>
+        in Test
+      </h1>
+      <p class="hero-desc">4+ years building, breaking, and automating web systems. Manual QA &bull; API testing &bull; CRM automation. Currently at Smart Techlodge.</p>
+
+      <div class="hero-stats">
+        <div class="hstat"><div class="hstat-n">4+</div><div class="hstat-l">Years Exp</div></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><div class="hstat-n">14</div><div class="hstat-l">Fiverr Orders</div></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><div class="hstat-n">$837</div><div class="hstat-l">Earned</div></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><div class="hstat-n">8★</div><div class="hstat-l">5-Star Reviews</div></div>
+      </div>
+
+      <div class="hero-btns">
+        <a href="#contact" class="btn-solid">Let's Work Together &rarr;</a>
+        <a href="#projects" class="btn-outline">View My Work</a>
+      </div>
+
+      <div class="hero-platforms">
+        <a href="https://www.upwork.com/freelancers/alisaeed44" target="_blank" rel="noopener" class="plink plink-upwork">Upwork</a>
+        <a href="https://www.fiverr.com/sellers/iamalibinsaeed/" target="_blank" rel="noopener" class="plink plink-fiverr">Fiverr</a>
+        <a href="https://www.freelancer.com/u/iamalibinsaeed" target="_blank" rel="noopener" class="plink plink-fl">Freelancer</a>
+        <a href="https://linkedin.com/in/iamalibinsaeed" target="_blank" rel="noopener" class="plink plink-li">LinkedIn</a>
       </div>
     </div>
-    <div class="hero-cta">
-      <a href="#contact" class="btn-primary">↗ Get in Touch</a>
-      <a href="#experience" class="btn-ghost">View Experience</a>
+
+    <div class="hero-right">
+      <div class="photo-wrap">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <img src="photo.jpg" alt="Ali Bin Saeed — Software Engineer in Test" class="hero-photo" />
+        <div class="photo-badge"><span class="badge-dot"></span> Open to Work</div>
+      </div>
+      <div class="hero-loc">&#128205; Rahim Yar Khan, Pakistan</div>
     </div>
+
   </div>
-  <div class="scroll-indicator">
-    <div class="scroll-line"></div>
-    <span class="scroll-text">Scroll to explore</span>
-  </div>
+  <div class="scroll-cue"><div class="scroll-line-el"></div><span>scroll</span></div>
 </section>
 
-<section id="about">
-  <div class="section-wrap">
-    <div class="section-header reveal">
-      <span class="section-num">01</span>
-      <h2 class="section-title">About</h2>
-      <div class="section-line"></div>
-    </div>
+<!-- ABOUT -->
+<section id="about" class="sec">
+  <div class="container">
+    <p class="sec-label reveal">01 &mdash; About</p>
     <div class="about-grid">
-      <div class="about-text reveal">
-        <p>I'm a Software Engineer in Test with a background that spans full-stack development, CRM workflow automation, and quality assurance. Based in Rahim Yar Khan, Pakistan — working with teams worldwide.</p>
-        <p>My edge: I can build the thing <em>and</em> break it. Having written production PHP and React code before moving into QA means I test with developer intuition — finding edge cases that pure testers miss.</p>
-        <p>Certified by Google in Project Management and PMI in Generative AI, I'm actively expanding into n8n, Zapier, Make.com, and Playwright automation. Always upskilling.</p>
-        <p class="mono-note">// iamalibinsaeed@gmail.com · +92-317-6327721</p>
+      <div class="reveal">
+        <h2 class="sec-h2">The mind behind<br><span class="grad-text">the work</span></h2>
+        <p class="body-p">I'm a Software Engineer in Test with a background spanning full-stack development, CRM workflow automation, and quality assurance. Based in Rahim Yar Khan, Pakistan &mdash; working with teams worldwide.</p>
+        <p class="body-p">My edge: I can build the thing <em>and</em> break it. Having written production PHP and React.js code before moving into QA means I test with developer intuition &mdash; finding edge cases that pure testers miss.</p>
+        <p class="body-p">Certified by Google in Project Management and PMI in Generative AI. Actively expanding into n8n, Zapier, Make.com, and Playwright. Always upskilling.</p>
+        <div class="about-btns">
+          <a href="mailto:iamalibinsaeed@gmail.com" class="btn-solid">Email Me</a>
+          <a href="https://linkedin.com/in/iamalibinsaeed" target="_blank" rel="noopener" class="btn-outline">LinkedIn</a>
+        </div>
       </div>
-      <div class="about-highlights reveal delay-1">
-        <div class="highlight">
-          <div class="hl-label">Current Role</div>
-          <div class="hl-value">Software Engineer in Test — Smart Techlodge</div>
-        </div>
-        <div class="highlight">
-          <div class="hl-label">Education</div>
-          <div class="hl-value">B.Sc. Computer Science — NCBAE, Rahim Yar Khan</div>
-        </div>
-        <div class="highlight">
-          <div class="hl-label">Location</div>
-          <div class="hl-value">Rahim Yar Khan, Pakistan · Remote Worldwide</div>
-        </div>
-        <div class="highlight">
-          <div class="hl-label">Languages</div>
-          <div class="hl-value">English (Professional) · Urdu (Native)</div>
-        </div>
-        <div class="highlight">
-          <div class="hl-label">Currently Learning</div>
-          <div class="hl-value">n8n · Playwright · Python · Zapier · Make.com</div>
-        </div>
+      <div class="about-cards reveal delay-1">
+        <div class="acard"><div class="acard-lbl">Current Role</div><div class="acard-val">Software Engineer in Test &mdash; Smart Techlodge</div></div>
+        <div class="acard"><div class="acard-lbl">Education</div><div class="acard-val">B.Sc. Computer Science &mdash; NCBAE, Rahim Yar Khan</div></div>
+        <div class="acard"><div class="acard-lbl">Location</div><div class="acard-val">Rahim Yar Khan, Pakistan &middot; Remote Worldwide</div></div>
+        <div class="acard"><div class="acard-lbl">Languages</div><div class="acard-val">English (Professional) &middot; Urdu (Native)</div></div>
+        <div class="acard acard-glow"><div class="acard-lbl">Learning Now &#9889;</div><div class="acard-val">n8n &middot; Playwright &middot; Python &middot; Zapier &middot; Make.com</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="skills">
-  <div class="section-wrap">
-    <div class="section-header reveal">
-      <span class="section-num">02</span>
-      <h2 class="section-title">Skills</h2>
-      <div class="section-line"></div>
-    </div>
+<!-- SKILLS -->
+<section id="skills" class="sec sec-dark">
+  <div class="container">
+    <p class="sec-label reveal">02 &mdash; Skills</p>
+    <h2 class="sec-h2 reveal">Tech <span class="grad-text">Stack</span></h2>
     <div class="skills-grid">
-      <div class="skill-card reveal">
-        <div class="skill-cat">Testing &amp; QA</div>
-        <div class="skill-title">Quality Assurance</div>
-        <div class="skill-tags">
-          <span class="tag">Manual Testing</span><span class="tag">Test Planning</span>
-          <span class="tag">Bug Tracking</span><span class="tag">Regression Testing</span>
-          <span class="tag">Exploratory Testing</span><span class="tag">Smoke Testing</span>
-        </div>
-      </div>
-      <div class="skill-card reveal delay-1">
-        <div class="skill-cat">API &amp; Tools</div>
-        <div class="skill-title">API &amp; DevTools</div>
-        <div class="skill-tags">
-          <span class="tag">Postman</span><span class="tag">REST APIs</span>
-          <span class="tag">Git</span><span class="tag">GitHub</span>
-          <span class="tag">Jira</span><span class="tag">Trello</span>
-          <span class="tag">VS Code</span>
-        </div>
-      </div>
-      <div class="skill-card reveal delay-2">
-        <div class="skill-cat">Development</div>
-        <div class="skill-title">Web Stack</div>
-        <div class="skill-tags">
-          <span class="tag">React.js</span><span class="tag">Vue.js</span>
-          <span class="tag">Next.js</span><span class="tag">PHP</span>
-          <span class="tag">JavaScript</span><span class="tag">HTML/CSS</span>
-          <span class="tag">MySQL</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-cat">CRM &amp; Automation</div>
-        <div class="skill-title">Workflow Systems</div>
-        <div class="skill-tags">
-          <span class="tag">SuiteCRM</span><span class="tag">SugarCRM</span>
-          <span class="tag">Module Automation</span><span class="tag">Data Pipelines</span>
-          <span class="tag">WordPress</span><span class="tag">Signal CRM</span>
-        </div>
-      </div>
-      <div class="skill-card reveal delay-1">
-        <div class="skill-cat">AI &amp; Cloud</div>
-        <div class="skill-title">AI &amp; Cloud</div>
-        <div class="skill-tags">
-          <span class="tag">Generative AI (PMI)</span>
-          <span class="tag">Google Cloud</span>
-          <span class="tag">Cloud Identity</span>
-          <span class="tag">AI-Assisted Dev</span>
-        </div>
-      </div>
-      <div class="skill-card reveal delay-2 skill-card--active">
-        <div class="skill-cat">In Progress ⚡</div>
-        <div class="skill-title">Upskilling Now</div>
-        <div class="skill-tags">
-          <span class="tag tag--active">n8n</span>
-          <span class="tag tag--active">Zapier</span>
-          <span class="tag tag--active">Make.com</span>
-          <span class="tag tag--active">Playwright</span>
-          <span class="tag tag--active">Python</span>
-        </div>
-      </div>
+      <div class="sk-card reveal"><div class="sk-ico">QA</div><div class="sk-name">Quality Assurance</div><div class="sk-tags"><span>Manual Testing</span><span>Test Planning</span><span>Bug Tracking</span><span>Regression</span><span>Exploratory</span><span>Smoke Testing</span></div></div>
+      <div class="sk-card reveal delay-1"><div class="sk-ico">API</div><div class="sk-name">API &amp; DevTools</div><div class="sk-tags"><span>Postman</span><span>REST APIs</span><span>Git</span><span>GitHub</span><span>Jira</span><span>Trello</span><span>VS Code</span></div></div>
+      <div class="sk-card reveal delay-2"><div class="sk-ico">&lt;/&gt;</div><div class="sk-name">Web Development</div><div class="sk-tags"><span>React.js</span><span>Vue.js</span><span>Next.js</span><span>PHP</span><span>JavaScript</span><span>MySQL</span><span>HTML/CSS</span></div></div>
+      <div class="sk-card reveal"><div class="sk-ico">CRM</div><div class="sk-name">CRM &amp; Automation</div><div class="sk-tags"><span>SuiteCRM</span><span>SugarCRM</span><span>WordPress</span><span>Module Automation</span><span>Data Pipelines</span></div></div>
+      <div class="sk-card reveal delay-1"><div class="sk-ico">AI</div><div class="sk-name">AI &amp; Cloud</div><div class="sk-tags"><span>Generative AI (PMI)</span><span>Google Cloud</span><span>Cloud Identity</span><span>AI-Assisted Dev</span></div></div>
+      <div class="sk-card sk-card-glow reveal delay-2"><div class="sk-ico">&#9889;</div><div class="sk-name">Upskilling Now</div><div class="sk-tags sk-cyan"><span>n8n</span><span>Zapier</span><span>Make.com</span><span>Playwright</span><span>Python</span></div></div>
     </div>
   </div>
 </section>
 
-<section id="experience">
-  <div class="section-wrap">
-    <div class="section-header reveal">
-      <span class="section-num">03</span>
-      <h2 class="section-title">Experience</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="exp-timeline">
-
-      <div class="exp-item reveal">
-        <div class="exp-date"><div class="exp-date-text">Sep 2025<br>Present</div></div>
-        <div class="exp-line-col"><div class="exp-dot exp-dot--cyan"></div><div class="exp-connector"></div></div>
-        <div class="exp-content">
-          <div class="exp-role">Software Engineer in Test <span class="exp-current">CURRENT</span></div>
-          <div class="exp-company">Smart Techlodge · Rahim Yar Khan</div>
-          <div class="exp-desc">End-to-end test planning, Postman API validation, Jira defect lifecycle management, regression &amp; exploratory testing. Leveraging AI tools for test case generation and documentation.</div>
-        </div>
-      </div>
-
-      <div class="exp-item reveal">
-        <div class="exp-date"><div class="exp-date-text">Feb 2025<br>May 2025</div></div>
-        <div class="exp-line-col"><div class="exp-dot exp-dot--purple"></div><div class="exp-connector"></div></div>
-        <div class="exp-content">
-          <div class="exp-role">Software Engineer</div>
-          <div class="exp-company">AWAYR Ltd. · Lahore</div>
-          <div class="exp-desc">Built and tested React.js + Vue.js features. Unit &amp; integration testing, code reviews, API validation, cross-browser compatibility.</div>
-        </div>
-      </div>
-
-      <div class="exp-item reveal">
-        <div class="exp-date"><div class="exp-date-text">Aug 2024<br>Jan 2025</div></div>
-        <div class="exp-line-col"><div class="exp-dot exp-dot--purple"></div><div class="exp-connector"></div></div>
-        <div class="exp-content">
-          <div class="exp-role">Software Engineer</div>
-          <div class="exp-company">IT Extension · Lahore</div>
-          <div class="exp-desc">React.js web apps, REST API integration and testing, code reviews, frontend performance optimization.</div>
-        </div>
-      </div>
-
-      <div class="exp-item reveal">
-        <div class="exp-date"><div class="exp-date-text">Feb 2024<br>Jul 2024</div></div>
-        <div class="exp-line-col"><div class="exp-dot exp-dot--teal"></div><div class="exp-connector"></div></div>
-        <div class="exp-content">
-          <div class="exp-role">Software QA Engineer</div>
-          <div class="exp-company">Smart Techlodge · Rahim Yar Khan</div>
-          <div class="exp-desc">Manual test plans for SuiteCRM customizations, defect tracking, client delivery validation.</div>
-        </div>
-      </div>
-
-      <div class="exp-item reveal">
-        <div class="exp-date"><div class="exp-date-text">Feb 2023<br>Jan 2024</div></div>
-        <div class="exp-line-col"><div class="exp-dot exp-dot--teal"></div><div class="exp-connector"></div></div>
-        <div class="exp-content">
-          <div class="exp-role">Software Engineer</div>
-          <div class="exp-company">Smart Techlodge · Rahim Yar Khan</div>
-          <div class="exp-desc">SuiteCRM/SugarCRM customization — modules, fields, dashlets, reports. PHP REST API integrations. CRM workflow automation for legal and linguistic clients.</div>
-        </div>
-      </div>
-
-      <div class="exp-item reveal">
-        <div class="exp-date"><div class="exp-date-text">Jul 2021<br>Dec 2021</div></div>
-        <div class="exp-line-col"><div class="exp-dot exp-dot--dim"></div><div class="exp-connector"></div></div>
-        <div class="exp-content">
-          <div class="exp-role">Customer Service Representative</div>
-          <div class="exp-company">TransData · Lahore</div>
-          <div class="exp-desc">US inbound e-commerce campaign. Signal CRM, SLA targets, order resolution, escalation handling.</div>
-        </div>
-      </div>
-
-      <div class="exp-item reveal">
-        <div class="exp-date"><div class="exp-date-text">Sep 2020<br>Feb 2021</div></div>
-        <div class="exp-line-col"><div class="exp-dot exp-dot--dim"></div><div class="exp-connector"></div></div>
-        <div class="exp-content">
-          <div class="exp-role">WordPress Developer</div>
-          <div class="exp-company">WebBuggs · Lahore (Internship)</div>
-          <div class="exp-desc">PSD/Figma to WordPress builds. Cross-browser testing, CSS consistency, responsive design.</div>
-        </div>
-      </div>
-
+<!-- EXPERIENCE -->
+<section id="experience" class="sec">
+  <div class="container">
+    <p class="sec-label reveal">03 &mdash; Experience</p>
+    <h2 class="sec-h2 reveal">Work <span class="grad-text">History</span></h2>
+    <div class="timeline">
+      <div class="ti reveal"><div class="ti-date">Sep 2025 &ndash; Present</div><div class="ti-dot cyan"></div><div class="ti-body"><div class="ti-role">Software Engineer in Test <span class="ti-badge">Current</span></div><div class="ti-co">Smart Techlodge &middot; Rahim Yar Khan</div><p class="ti-desc">End-to-end test planning, Postman API validation, Jira defect lifecycle, regression &amp; exploratory testing. AI-assisted test case generation.</p></div></div>
+      <div class="ti reveal"><div class="ti-date">Feb &ndash; May 2025</div><div class="ti-dot purple"></div><div class="ti-body"><div class="ti-role">Software Engineer</div><div class="ti-co">AWAYR Ltd. &middot; Lahore</div><p class="ti-desc">React.js + Vue.js features, unit &amp; integration testing, API validation, cross-browser compatibility.</p></div></div>
+      <div class="ti reveal"><div class="ti-date">Aug 2024 &ndash; Jan 2025</div><div class="ti-dot purple"></div><div class="ti-body"><div class="ti-role">Software Engineer</div><div class="ti-co">IT Extension &middot; Lahore</div><p class="ti-desc">React.js web apps, REST API integration and testing, code reviews, frontend performance.</p></div></div>
+      <div class="ti reveal"><div class="ti-date">Feb &ndash; Jul 2024</div><div class="ti-dot teal"></div><div class="ti-body"><div class="ti-role">Software QA Engineer</div><div class="ti-co">Smart Techlodge &middot; Rahim Yar Khan</div><p class="ti-desc">Manual test plans for SuiteCRM customizations, defect tracking, client delivery validation.</p></div></div>
+      <div class="ti reveal"><div class="ti-date">Feb 2023 &ndash; Jan 2024</div><div class="ti-dot teal"></div><div class="ti-body"><div class="ti-role">Software Engineer</div><div class="ti-co">Smart Techlodge &middot; Rahim Yar Khan</div><p class="ti-desc">SuiteCRM/SugarCRM customization &mdash; modules, fields, dashlets, reports. PHP REST API integrations for legal and linguistic clients.</p></div></div>
+      <div class="ti reveal"><div class="ti-date">Jul &ndash; Dec 2021</div><div class="ti-dot dim"></div><div class="ti-body"><div class="ti-role">Customer Service Representative</div><div class="ti-co">TransData &middot; Lahore</div><p class="ti-desc">US inbound e-commerce campaign. Signal CRM, SLA targets, order resolution, escalation handling.</p></div></div>
+      <div class="ti reveal"><div class="ti-date">Sep 2020 &ndash; Feb 2021</div><div class="ti-dot dim"></div><div class="ti-body"><div class="ti-role">WordPress Developer (Internship)</div><div class="ti-co">WebBuggs &middot; Lahore</div><p class="ti-desc">PSD/Figma to WordPress builds. Cross-browser testing, CSS consistency, responsive design.</p></div></div>
     </div>
   </div>
 </section>
 
-<section id="projects">
-  <div class="section-wrap">
-    <div class="section-header reveal">
-      <span class="section-num">04</span>
-      <h2 class="section-title">Projects</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="projects-grid">
-      <div class="project-card reveal">
-        <div class="project-num">P-01</div>
-        <div class="project-name">CRM Workflow Automation</div>
-        <div class="project-stack">SuiteCRM · PHP · MySQL · REST APIs</div>
-        <div class="project-desc">Automated translation and localization workflows for legal document management. Built custom modules, dashlets, and reports eliminating manual tracking for law firm stakeholders.</div>
-        <div class="project-arrow">→</div>
-      </div>
-      <div class="project-card reveal delay-1">
-        <div class="project-num">P-02</div>
-        <div class="project-name">IBERWAYS Limousine Platform</div>
-        <div class="project-stack">React.js · REST APIs · Postman</div>
-        <div class="project-desc">Validated RESTful APIs for a real-time booking and payment web app. Tested end-to-end data flows, error handling, and booking workflows for a Portugal-based chauffeured car service.</div>
-        <div class="project-arrow">→</div>
-      </div>
-      <div class="project-card reveal">
-        <div class="project-num">P-03</div>
-        <div class="project-name">School Management System</div>
-        <div class="project-stack">MERN · Next.js · REST APIs · Git</div>
-        <div class="project-desc">Full-stack platform for student records, attendance, and admin dashboards. QA across all modules — API validation, regression testing, and defect documentation.</div>
-        <div class="project-arrow">→</div>
-      </div>
-      <div class="project-card project-card--next reveal delay-1">
-        <div class="project-num project-num--active">NEXT</div>
-        <div class="project-name">Automation Portfolio Project</div>
-        <div class="project-stack">n8n · Zapier · Playwright · Python</div>
-        <div class="project-desc">Building a real-world automation workflow project to demonstrate n8n/Zapier skills. Will include AI-assisted test generation and end-to-end browser automation with Playwright.</div>
-        <div class="project-arrow project-arrow--active">⚡</div>
-      </div>
+<!-- PROJECTS -->
+<section id="projects" class="sec sec-dark">
+  <div class="container">
+    <p class="sec-label reveal">04 &mdash; Projects</p>
+    <h2 class="sec-h2 reveal">Selected <span class="grad-text">Work</span></h2>
+    <div class="proj-grid">
+      <div class="pcard reveal"><div class="pnum">01</div><h3 class="ptitle">CRM Workflow Automation</h3><div class="pstack">SuiteCRM &middot; PHP &middot; MySQL &middot; REST APIs</div><p class="pdesc">Automated translation &amp; localization workflows for legal document management. Custom modules, dashlets, and automated reports for law firm stakeholders.</p></div>
+      <div class="pcard reveal delay-1"><div class="pnum">02</div><h3 class="ptitle">IBERWAYS Limousine Platform</h3><div class="pstack">React.js &middot; REST APIs &middot; Postman</div><p class="pdesc">Validated RESTful APIs for a real-time booking and payment app for a Portugal-based chauffeured car service. Tested end-to-end flows and error scenarios.</p></div>
+      <div class="pcard reveal"><div class="pnum">03</div><h3 class="ptitle">School Management System</h3><div class="pstack">MERN &middot; Next.js &middot; REST APIs &middot; Git</div><p class="pdesc">Full-stack platform for student records, attendance, and admin dashboards. QA across all modules — API validation, regression testing, defect documentation.</p></div>
+      <div class="pcard pcard-next reveal delay-1"><div class="pnum pnum-glow">Next</div><h3 class="ptitle">Automation Portfolio Project</h3><div class="pstack">n8n &middot; Zapier &middot; Playwright &middot; Python</div><p class="pdesc">Building a real-world automation workflow: Google Drive &rarr; AI extraction &rarr; Word template &rarr; PDF output. Unlocks automation freelance work.</p><span class="wip-badge">&#9889; In Progress</span></div>
     </div>
   </div>
 </section>
 
-<section id="certifications">
-  <div class="section-wrap">
-    <div class="section-header reveal">
-      <span class="section-num">05</span>
-      <h2 class="section-title">Certifications</h2>
-      <div class="section-line"></div>
-    </div>
+<!-- CERTS -->
+<section id="certifications" class="sec">
+  <div class="container">
+    <p class="sec-label reveal">05 &mdash; Certifications</p>
+    <h2 class="sec-h2 reveal">Credentials <span class="grad-text">&amp; Learning</span></h2>
     <div class="certs-grid">
-      <div class="cert-item reveal">
-        <div class="cert-icon">PM</div>
-        <div>
-          <div class="cert-name">Foundations of Project Management</div>
-          <div class="cert-issuer">Google · Coursera</div>
-          <div class="cert-year">Jan 2026 · ID: 6S0UHN6HCNGX</div>
-        </div>
-      </div>
-      <div class="cert-item reveal delay-1">
-        <div class="cert-icon">AI</div>
-        <div>
-          <div class="cert-name">Generative AI Overview for Project Managers</div>
-          <div class="cert-issuer">PMI (Project Management Institute) · Credly</div>
-          <div class="cert-year">Nov 2025</div>
-        </div>
-      </div>
-      <div class="cert-item reveal">
-        <div class="cert-icon">☁</div>
-        <div>
-          <div class="cert-name">Introduction to Cloud Identity</div>
-          <div class="cert-issuer">Google Cloud Security · Coursera</div>
-          <div class="cert-year">Aug 2020 · ID: ZDJD2L9WADPC</div>
-        </div>
-      </div>
-      <div class="cert-item reveal delay-1">
-        <div class="cert-icon">IT</div>
-        <div>
-          <div class="cert-name">Technical Training Course</div>
-          <div class="cert-issuer">e-Rozgaar Program · Punjab IT Board</div>
-          <div class="cert-year">Jul 2022</div>
-        </div>
-      </div>
+      <div class="cert reveal"><div class="cert-ico">PM</div><div><div class="cert-name">Foundations of Project Management</div><div class="cert-issuer">Google &middot; Coursera</div><div class="cert-yr">Jan 2026</div></div></div>
+      <div class="cert reveal delay-1"><div class="cert-ico">AI</div><div><div class="cert-name">Generative AI Overview for Project Managers</div><div class="cert-issuer">PMI &middot; Credly</div><div class="cert-yr">Nov 2025</div></div></div>
+      <div class="cert reveal"><div class="cert-ico">&#9729;</div><div><div class="cert-name">Introduction to Cloud Identity</div><div class="cert-issuer">Google Cloud Security &middot; Coursera</div><div class="cert-yr">Aug 2020</div></div></div>
+      <div class="cert reveal delay-1"><div class="cert-ico">IT</div><div><div class="cert-name">Technical Training Course</div><div class="cert-issuer">e-Rozgaar &middot; Punjab IT Board</div><div class="cert-yr">Jul 2022</div></div></div>
     </div>
   </div>
 </section>
 
-<section id="contact">
-  <div class="section-wrap">
-    <div class="section-header reveal">
-      <span class="section-num">06</span>
-      <h2 class="section-title">Contact</h2>
-      <div class="section-line"></div>
-    </div>
+<!-- CONTACT -->
+<section id="contact" class="sec sec-dark">
+  <div class="container">
+    <p class="sec-label reveal">06 &mdash; Contact</p>
     <div class="contact-grid">
-      <div>
-        <p class="contact-text">Available for full-time remote roles worldwide. Immediate start. Strongest fit: QA Automation, AI/Workflow Automation, Technical Support, and Project Management roles.</p>
-        <div class="contact-links">
-          <a href="mailto:iamalibinsaeed@gmail.com" class="contact-link">
-            <span class="contact-link-icon">@</span>
-            <span class="contact-link-label">iamalibinsaeed@gmail.com</span>
-          </a>
-          <a href="https://linkedin.com/in/iamalibinsaeed" class="contact-link" target="_blank" rel="noopener noreferrer">
-            <span class="contact-link-icon">in</span>
-            <span class="contact-link-label">linkedin.com/in/iamalibinsaeed</span>
-          </a>
-          <a href="tel:+923176327721" class="contact-link">
-            <span class="contact-link-icon">☎</span>
-            <span class="contact-link-label">+92-317-6327721</span>
-          </a>
+      <div class="reveal">
+        <h2 class="sec-h2">Let's work<br><span class="grad-text">together</span></h2>
+        <p class="body-p">Available immediately for full-time or contract remote roles worldwide. Strongest fit: QA Automation, AI/Workflow Automation, Technical Support, and Project Management.</p>
+        <div class="clinks">
+          <a href="mailto:iamalibinsaeed@gmail.com" class="clink"><span class="ci">@</span><span>iamalibinsaeed@gmail.com</span></a>
+          <a href="tel:+923176327721" class="clink"><span class="ci">&#9743;</span><span>+92-317-6327721</span></a>
+          <a href="https://linkedin.com/in/iamalibinsaeed" class="clink" target="_blank" rel="noopener"><span class="ci ci-li">in</span><span>linkedin.com/in/iamalibinsaeed</span></a>
+          <a href="https://www.upwork.com/freelancers/alisaeed44" class="clink" target="_blank" rel="noopener"><span class="ci ci-up">Up</span><span>Upwork &mdash; alisaeed44</span></a>
+          <a href="https://www.fiverr.com/sellers/iamalibinsaeed/" class="clink" target="_blank" rel="noopener"><span class="ci ci-fv">Fv</span><span>Fiverr &mdash; iamalibinsaeed &middot; 14 orders &middot; 8&times;&#9733;</span></a>
+          <a href="https://www.freelancer.com/u/iamalibinsaeed" class="clink" target="_blank" rel="noopener"><span class="ci ci-fl">FL</span><span>Freelancer &mdash; iamalibinsaeed</span></a>
         </div>
       </div>
-      <div class="availability-card reveal">
-        <div class="avail-indicator">
-          <div class="avail-dot"></div>
-          <span class="avail-text">Available for hire</span>
-        </div>
-        <div class="avail-title">Ready to start immediately</div>
-        <div class="avail-desc">Open to full-time and contract remote roles across all time zones. I work with distributed teams and communicate clearly in English.</div>
-        <div class="avail-badges">
-          <span class="badge">Remote Only</span>
-          <span class="badge">Worldwide</span>
-          <span class="badge">Full-time</span>
-          <span class="badge">Contract</span>
-          <span class="badge">Immediate</span>
+      <div class="avail-card reveal delay-1">
+        <div class="avail-status"><span class="badge-dot"></span><span>Available for hire</span></div>
+        <h3 class="avail-h">Ready to start immediately</h3>
+        <p class="avail-p">Open to full-time and contract remote roles across all time zones. I work with distributed teams and communicate clearly in English.</p>
+        <div class="avail-chips">
+          <span>Remote Only</span><span>Worldwide</span><span>Full-time</span>
+          <span>Contract</span><span>Immediate Start</span>
         </div>
       </div>
     </div>
@@ -386,10 +202,10 @@
 </section>
 
 <footer>
-  <div class="footer-inner">
-    <span>Ali Bin Saeed © 2026</span>
-    <span>Software Engineer in Test · Remote Worldwide</span>
-    <span>Built with intent</span>
+  <div class="container foot-inner">
+    <span>Ali Bin Saeed &copy; 2026</span>
+    <span>Software Engineer in Test &middot; Remote Worldwide</span>
+    <a href="mailto:iamalibinsaeed@gmail.com">iamalibinsaeed@gmail.com</a>
   </div>
 </footer>
 
